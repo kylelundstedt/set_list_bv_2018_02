@@ -12,7 +12,7 @@ library(huxtable)
 set_lists <- gs_title("LC Gigs Set Lists")
 
 # connect to gig-specific tab in that workbook
-gig_name <- "20171110 Hopmonk"
+gig_name <- "20180224 BV"
 set_list <- set_lists %>% gs_read(ws = gig_name) %>%
   mutate( Artist = str_replace_all(Artist, "/", "-") ) %>%
   mutate( Artist = str_replace_all(Artist, "’" , "") ) %>%
